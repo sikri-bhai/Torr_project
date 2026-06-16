@@ -1,0 +1,3 @@
+C:\cmake-4.0.0-rc4-windows-x86_64\cmake-4.0.0-rc4-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\peer.dir/objects.a
+D:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\peer.dir/objects.a @CMakeFiles\peer.dir\objects1.rsp
+D:\msys64\ucrt64\bin\g++.exe  -std=c++17 -pthread -g  -pthread -Wl,--whole-archive CMakeFiles\peer.dir/objects.a -Wl,--no-whole-archive -o peer.exe -Wl,--out-implib,libpeer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\peer.dir\linkLibs.rsp

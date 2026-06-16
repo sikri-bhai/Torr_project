@@ -1,0 +1,4 @@
+C:/Users/Daksh/Desktop/Torr_project_cursor/build/CMakeFiles/tracker.dir
+C:/Users/Daksh/Desktop/Torr_project_cursor/build/CMakeFiles/peer.dir
+C:/Users/Daksh/Desktop/Torr_project_cursor/build/CMakeFiles/edit_cache.dir
+C:/Users/Daksh/Desktop/Torr_project_cursor/build/CMakeFiles/rebuild_cache.dir

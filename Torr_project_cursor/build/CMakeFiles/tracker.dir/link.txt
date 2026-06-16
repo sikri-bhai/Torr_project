@@ -1,0 +1,3 @@
+C:\cmake-4.0.0-rc4-windows-x86_64\cmake-4.0.0-rc4-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\tracker.dir/objects.a
+D:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\tracker.dir/objects.a @CMakeFiles\tracker.dir\objects1.rsp
+D:\msys64\ucrt64\bin\g++.exe  -std=c++17 -pthread -g  -pthread -Wl,--whole-archive CMakeFiles\tracker.dir/objects.a -Wl,--no-whole-archive -o tracker.exe -Wl,--out-implib,libtracker.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\tracker.dir\linkLibs.rsp
