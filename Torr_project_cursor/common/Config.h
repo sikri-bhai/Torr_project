@@ -2,6 +2,8 @@
 
 #include <string>
 
+using namespace std;
+
 struct Config {
     int pieceSize = 1048576;
     int heartbeatInterval = 5;
@@ -10,8 +12,8 @@ struct Config {
     int connectTimeout = 5;
     int trackerPort = 8080;
     int peerPort = 5001;
-    std::string trackerHost = "127.0.0.1";
-    std::string peerId = "peer1";
-    std::string sharedDir = "shared";
-    std::string downloadDir = "downloads";
+    string trackerHost = "127.0.0.1";
+    string peerId = "peer1";
+    string sharedDir = "shared";
+    string downloadDir = "downloads";
 };

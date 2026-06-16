@@ -3,6 +3,7 @@
 #include "Config.h"
 #include "FileAssembler.h"
 #include "HashManager.h"
+#include "Net.h"
 #include "PieceManager.h"
 #include "ResumeManager.h"
 #include "Scheduler.h"

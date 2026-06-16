@@ -43,6 +43,11 @@ add_executable(peer
 target_include_directories(tracker PRIVATE ${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/common)
 target_include_directories(peer PRIVATE ${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/common)
 
+if(WIN32)
+    target_compile_definitions(tracker PRIVATE WIN32_LEAN_AND_MEAN NOMINMAX)
+    target_compile_definitions(peer PRIVATE WIN32_LEAN_AND_MEAN NOMINMAX)
+endif()
+
 target_link_libraries(tracker PRIVATE ws2_32)
 target_link_libraries(peer PRIVATE ws2_32)
 

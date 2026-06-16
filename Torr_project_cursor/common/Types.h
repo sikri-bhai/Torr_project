@@ -6,28 +6,30 @@
 #include <unordered_map>
 #include <vector>
 
+using namespace std;
+
 struct PeerInfo {
-    std::string peerId;
-    std::string ipAddress;
+    string peerId;
+    string ipAddress;
     int port = 0;
-    std::time_t lastHeartbeat = 0;
+    time_t lastHeartbeat = 0;
 };
 
 struct FileInfo {
-    std::string fileName;
+    string fileName;
     long long fileSize = 0;
     int pieceCount = 0;
-    std::vector<std::string> pieceHashes;
+    vector<string> pieceHashes;
 };
 
 struct TrackerRecord {
     FileInfo metadata;
-    std::unordered_map<std::string, std::set<int>> peerPieces;
+    unordered_map<string, set<int>> peerPieces;
 };
 
 struct TrackerDatabase {
-    std::unordered_map<std::string, PeerInfo> peers;
-    std::unordered_map<std::string, TrackerRecord> files;
+    unordered_map<string, PeerInfo> peers;
+    unordered_map<string, TrackerRecord> files;
 };
 
 enum class PieceState {
@@ -37,8 +39,8 @@ enum class PieceState {
 };
 
 struct SwarmPeer {
-    std::string peerId;
-    std::string ip;
+    string peerId;
+    string ip;
     int port = 0;
-    std::set<int> pieces;
+    set<int> pieces;
 };
