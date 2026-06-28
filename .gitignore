@@ -1,0 +1,55 @@
+# ---------------------------------------------------------------
+# Build artifacts (CMake / make / compiler output)
+# ---------------------------------------------------------------
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+CMakeUserPresets.json
+cmake_install.cmake
+compile_commands.json
+Makefile
+*.o
+*.obj
+*.obj.d
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.exp
+
+# ---------------------------------------------------------------
+# IDE / editor state
+# ---------------------------------------------------------------
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------------
+# OS junk
+# ---------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# ---------------------------------------------------------------
+# Runtime artifacts created by the peer when you run it from
+# inside the repo (shared/ holds files you serve, downloads/
+# holds reassembled files, *.pieces/ holds chunk staging dirs).
+# ---------------------------------------------------------------
+shared/
+downloads/
+*.pieces/
+runs/
