@@ -15,7 +15,7 @@ string FileAssembler::outputPath(const string& fileName) const {
 
 bool FileAssembler::assemble(const string& fileName, int pieceCnt, long long expectedSz) {
     string outPath = outputPath(fileName);
-    string pieceDir = cfg_.downloadDir + "/" + fileName;
+    string pieceDir = cfg_.downloadDir + "/" + fileName + ".pieces";
     ofstream out(outPath, ios::binary | ios::trunc);
     if (!out) return false;
 

@@ -25,7 +25,7 @@ bool PieceManager::initDownload(const string& fileName, int pieceCnt, long long 
     fileName_ = fileName;
     fileSz_ = fileSz;
     pieceCnt_ = pieceCnt;
-    pieceDir_ = cfg_.downloadDir + "/" + fileName;
+    pieceDir_ = cfg_.downloadDir + "/" + fileName + ".pieces";
     Util::ensureDir(cfg_.downloadDir);
     Util::ensureDir(pieceDir_);
     owned_.assign(pieceCnt_, false);
